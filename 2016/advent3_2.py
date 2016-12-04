@@ -1,4 +1,4 @@
-inputFile = open("input.txt", 'r')
+inputFile = open("input3.txt", 'r')
 fileContent = inputFile.read()
 inputFile.close()
 
@@ -7,8 +7,6 @@ def is_triangle(a, b, c):
     return (a + b > c) and (b + c > a) and (a + c > b)
 
 numbers = list(map(lambda x: int(x.strip()), fileContent.split()))
-
-print len(numbers)/3
 
 result = 0
 for i in range(0, len(numbers), 9):
